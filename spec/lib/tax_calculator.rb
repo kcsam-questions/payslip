@@ -33,7 +33,6 @@ RSpec.describe TaxCalculator do
       }
     end
 
-
     it 'return the correct name and monthly payslip details' do
       expect(calculator1).to eq expected_response1
       expect(calculator2).to eq expected_response2
