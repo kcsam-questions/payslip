@@ -1,5 +1,4 @@
 require_relative '../rails_helper'
-require 'byebug'
 
 RSpec.describe PayslipsController, type: :controller do
   describe 'GET #generate_monthly_payslip' do
