@@ -8,16 +8,16 @@ RSpec.describe PayslipsController, type: :controller do
     end
 
     context 'when params are provided' do
-      let(:name)   { 'Alice' }
+      let(:employee_name)   { 'Alice' }
       let(:params) do
         {
-          name: name,
-          gross_annual_income: 60_000
+          employee_name: employee_name,
+          annual_income: 60_000
         }
       end
       let(:expected_response) do
         {
-          'employee_name': name,
+          'employee_name': employee_name,
           'gross_monthly_income': '$5000.00',
           'monthly_income_tax': '$500.00',
           'net_monthly_income': '$4500.00'
