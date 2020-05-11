@@ -16,8 +16,6 @@ class TaxCalculator
   CURRENCY_SYMBOL = '$'.freeze
 
   class << self
-    attr_accessor :gross_annual_income
-
     def generate_monthly_payslip(name, gross_annual_income)
       @gross_annual_income = gross_annual_income.to_f
       {

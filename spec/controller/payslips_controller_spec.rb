@@ -7,7 +7,7 @@ RSpec.describe PayslipsController, type: :controller do
     end
 
     context 'when params are provided' do
-      let(:employee_name)   { 'Alice' }
+      let(:employee_name) { 'Alice' }
       let(:params) do
         {
           employee_name: employee_name,
@@ -40,7 +40,8 @@ RSpec.describe PayslipsController, type: :controller do
       end
 
       it 'returns the monthly payslips' do
-        expect(JSON.parse(response.body)['error_messages']).to eq I18n.t('bad_request')
+        expect(JSON.parse(response.body)['error_messages'])
+          .to eq I18n.t('bad_request')
       end
     end
   end
