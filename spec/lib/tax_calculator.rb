@@ -7,9 +7,9 @@ RSpec.describe TaxCalculator do
     let(:expected_response1) do
       {
         "employee_name": 'a',
-        "gross_monthly_income": '5000.00',
-        "monthly_income_tax": '500.00',
-        "net_monthly_income": '4500.00'
+        "gross_monthly_income": '$5000.00',
+        "monthly_income_tax": '$500.00',
+        "net_monthly_income": '$4500.00'
       }
     end
 
@@ -17,9 +17,9 @@ RSpec.describe TaxCalculator do
     let(:expected_response2) do
       {
         "employee_name": 'b',
-        "gross_monthly_income": '16666.67',
-        "monthly_income_tax": '4000.00',
-        "net_monthly_income": '12666.67'
+        "gross_monthly_income": '$16666.67',
+        "monthly_income_tax": '$4000.00',
+        "net_monthly_income": '$12666.67'
       }
     end
 
@@ -27,9 +27,9 @@ RSpec.describe TaxCalculator do
     let(:expected_response3) do
       {
         "employee_name": 'c',
-        "gross_monthly_income": '6679.17',
-        "monthly_income_tax": '837.08',
-        "net_monthly_income": '5842.09'
+        "gross_monthly_income": '$6679.17',
+        "monthly_income_tax": '$837.08',
+        "net_monthly_income": '$5842.09'
       }
     end
 
