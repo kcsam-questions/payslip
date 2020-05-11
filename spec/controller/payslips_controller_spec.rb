@@ -41,7 +41,7 @@ RSpec.describe PayslipsController, type: :controller do
       end
 
       it 'returns the monthly payslips' do
-        expect(JSON.parse(response.body)['error_messages']).to eq 'Insufficient Info'
+        expect(JSON.parse(response.body)['error_messages']).to eq I18n.t('bad_request')
       end
     end
   end
